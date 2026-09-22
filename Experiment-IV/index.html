@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            max-width: 600px;
+            margin: 45px auto;
+            text-align: center;
+            background-color: beige;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            color: cornflowerblue;
+        }
+        button {
+            background-color: lavenderblush;
+        }
+        #message {
+            color: purple;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Forecast Graph (25WH1A05L8)</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="getWeatherBtn">Get Weather</button>
+
+    <p id="message"></p>
+    <canvas id="weatherChart" width="600" height="300"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
